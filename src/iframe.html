@@ -5,47 +5,46 @@
 	</head>
 	<body>
 
-		<div class="wrapper" id="popupLightbox">
-			<div class="header">
-				<span class="glyphicon glyphicon-remove big-x" />
+		<div id="mainModal">
+
+			<div class="wrapper" id="popupLightbox">
+				<div class="header">
+					<span class="glyphicon glyphicon-remove big-x" />
+				</div>
+
+				<div class="lightbox">
+					<h1>BOOK DIRECT. GET REWARDED.</h1>
+					<h2>GET 3 FREE REWARDS LIKE:</h2>
+					<div id="images">
+						<img src="starbucks.png" />
+						<img src="united.png" />
+						<img src="gogo.png" />
+					</div>
+					<a href="#" class="button">
+						Book Now + Get Free Rewards
+						<span class="glyphicon glyphicon-arrow-right"></span>
+					</a>
+					<h3>Best Rate Guaranteed</h3>
+				</div>
 			</div>
 
-			<div class="lightbox">
-				<h1>BOOK DIRECT. GET REWARDED.</h1>
-				<h2>GET 3 FREE REWARDS LIKE:</h2>
-				<div id="images">
-					<img src="starbucks.png" />
-					<img src="united.png" />
-					<img src="gogo.png" />
-				</div>
-				<a href="#" class="button">
-					Book Now + Get Free Rewards
-					<span class="glyphicon glyphicon-arrow-right"></span>
-				</a>
-				<h3>Best Rate Guaranteed</h3>
-			</div>
 		</div>
 
 		<script type="text/javascript">
 			var docBody = document.getElementsByTagName('body')[0]
+			var mainModal = document.getElementById('mainModal')
 			var lightbox = document.getElementById('popupLightbox')
 			var closeButton = document.getElementsByClassName('big-x')[0]
 
 			// for closing lightbox
-			window.addEventListener('click', function(event){
-				debugger
-				if (event.target === closeButton){
+			window.addEventListener('click', function(event){		
+				if (event.target === mainModal){
+					docBody.style.background = 'rgba(0,0,0,0)'
+					lightbox.style.display = 'none'
+				} else if (event.target === closeButton){
 					docBody.style.background = 'rgba(0,0,0,0)'
 					lightbox.style.display = 'none'
 				}
-				
-				// if (event.target == lightbox){
-				// 	docBody.style.background = 'rgba(0,0,0,0)'
-				// 	lightbox.style.display = 'none'
-				// } else if (event.target == closeButton){
-				// 	docBody.style.background = 'rgba(0,0,0,0)'
-				// 	lightbox.style.display = 'none'
-				// }
 			})
 		</script>
 	</body>
