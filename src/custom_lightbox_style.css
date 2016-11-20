@@ -101,10 +101,6 @@ a.button:hover {
 		height: auto;
 	}
 
-	.lightbox-wrapper > .lightbox-content > {
-		font-size: 2.5em;
-	}
-
 	img {
 		max-width: 12em;
 	}
