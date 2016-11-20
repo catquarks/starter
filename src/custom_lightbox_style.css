@@ -11,7 +11,7 @@ body {
 	height: 100%;
 }
 
-.wrapper {
+.lightbox-wrapper {
 	background: #fff;
 	margin-top: 8em;
 	margin-left: auto;
@@ -22,7 +22,7 @@ body {
 	box-shadow: 3px 3px 5px #252525;
 }
 
-.wrapper > .header {
+.lightbox-wrapper > .header {
 	height: auto;
 	width: auto;
 	text-align: right;
@@ -42,7 +42,7 @@ body {
 	transition: color 0.5s;
 }
 
-.wrapper > .lightbox {
+.lightbox-wrapper > .lightbox-content {
 	padding: 1em;
 	text-align: center;
 }
@@ -96,12 +96,12 @@ body {
 	font-size: 2vw;
 }
 
-.wrapper {
+.lightbox-wrapper {
 	width: 90%;
 	height: auto;
 }
 
-.wrapper > .lightbox > {
+.lightbox-wrapper > .lightbox-content > {
 	font-size: 2.5em;
 }
 
