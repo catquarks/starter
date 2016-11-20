@@ -7,7 +7,7 @@
 
 		<div class="wrapper" id="popupLightbox">
 			<div class="header">
-				<a href="#" class="big-x"><span class="glyphicon glyphicon-remove"></span></a>
+				<span class="glyphicon glyphicon-remove big-x" />
 			</div>
 
 			<div class="lightbox">
@@ -33,13 +33,19 @@
 
 			// for closing lightbox
 			window.addEventListener('click', function(event){
-				if (event.target != lightbox){
-					docBody.style.background = 'rgba(0,0,0,0)'
-					lightbox.style.display = 'none'
-				} else if (event.target === closeButton){
+				debugger
+				if (event.target === closeButton){
 					docBody.style.background = 'rgba(0,0,0,0)'
 					lightbox.style.display = 'none'
 				}
+				
+				// if (event.target == lightbox){
+				// 	docBody.style.background = 'rgba(0,0,0,0)'
+				// 	lightbox.style.display = 'none'
+				// } else if (event.target == closeButton){
+				// 	docBody.style.background = 'rgba(0,0,0,0)'
+				// 	lightbox.style.display = 'none'
+				// }
 			})
 		</script>
 	</body>

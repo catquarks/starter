@@ -37,6 +37,7 @@ body {
 
 .header > .big-x:hover {
 	color: #444;
+	cursor: pointer;
 	transition: color 0.5s;
 }
 
